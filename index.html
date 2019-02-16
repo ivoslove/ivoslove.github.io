@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
        <meta charset="utf-8">
-       <title> Lee| welcome </title>
-       <link rel="stylesheet" href="css/LeeStyle.css">
-    </head>
-   <body>
+             <title> Lee | welcome </title>
+ <link rel="stylesheet" href="css/LeeStyle.css">
+       <style type="text/css">
+         @font-face
+		 {
+          /* font-properties */
+          font-family: myfont;
+          src:url('font/fontname.ttf');     
+         }
+       </style>
+</head>    
+
+<body>
        <header>
-            <a href="index.html">
+            <a href="index.html" id="textalign-center">
                        <h1> hello word </h1> 
                        <h2> 努力因为热爱 </h2> 
+      
+                       
             </a>
             <nav>
                <ul>
-                   <li>   <a href="index.html">视频</a> </li>
+                   <li>   <a href="index.html" class="selected" >视频</a> </li>
                     <li>   <a href="index.html">音乐</a> </li>
                      <li>   <a href="index.html">文章</a> </li>
                </ul>
@@ -36,12 +47,13 @@
                         </a>
                         
                     </li>
-                                       <li>
+                    <li>
+                    <div id="wrapper">
                          <a href="img/3.jpg">
                               <img src="img/3.jpg"height="1920" width="1080"  alt="" >
                               <p>Rock</p>
                         </a>
-                        
+                    </div> 
                     </li>
 
                </ul>
@@ -51,6 +63,7 @@
            </a>
          <p>&copy; lee 和他的朋友股份有限公司</p>
     </footer>
-    </body>
+</body>
+
 </html>
 
