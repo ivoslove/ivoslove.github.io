@@ -1,69 +1,933 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
 <head>
-       <meta charset="utf-8">
-             <title> Lee | welcome </title>
- <link rel="stylesheet" href="css/LeeStyle.css">
-       <style type="text/css">
-         @font-face
-		 {
-          /* font-properties */
-          font-family: myfont;
-          src:url('font/fontname.ttf');     
-         }
-       </style>
-</head>    
-
+<title>我的简历是一个引导响应式网站</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="My Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+<!--Custom Theme files-->
+<link rel="shortcut icon" href="images/your_ico.ico" type="image/x-icon">
+<link rel="icon" href="images/your_ico.ico" type="image/x-icon">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+<!--web-fonts-->
+<!--<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
+<!--<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+<!--//web-fonts-->
+<!--start-smooth-scrolling-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<!--//end-smooth-scrolling-->
+</head>
 <body>
-       <header>
-            <a href="index.html" id="textalign-center">
-                       <h1> hello word </h1> 
-                       <h2> 努力因为热爱 </h2> 
-      
-                       
-            </a>
-            <nav>
-               <ul>
-                   <li>   <a href="index.html" class="selected" >视频</a> </li>
-                    <li>   <a href="index.html">音乐</a> </li>
-                     <li>   <a href="index.html">文章</a> </li>
-               </ul>
-            </nav>
-       </header>
-    <section> 
-               <ul>
-                   <li>
-                         <a href="img/1.jpg">
-                              <img src="img/1.jpg" height="1080" width="1920"  alt="" >
-                              <p>Rock</p>
-                        </a>
-                        
-                    </li>
-                    
-                                       <li>
-                         <a href="img/2.jpg">
-                              <img src="img/2.jpg" height="1080" width="1920" alt="" >
-                              <p>Rock</p>
-                        </a>
-                        
-                    </li>
-                    <li>
-                    <div id="wrapper">
-                         <a href="img/3.jpg">
-                              <img src="img/3.jpg"height="1920" width="1080"  alt="" >
-                              <p>Rock</p>
-                        </a>
-                    </div> 
-                    </li>
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/2019-11-27 213408.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<h2>Hello</h2>
+					<h1>My name is LiWenbin</h1>
+					<h6>一个热爱编程的大龄文艺男青年</h6>
+					<ul class="address">
+						<li>
+							<ul class="address-text">
+								<li><b>出生日期</b></li>
+								<li>06-12-1991</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>联系电话 </b></li>
+								<li>18737199160</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>居住地址 </b></li>
+								<li>河南省郑州市金水区东风路92号富景花园</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>个人邮箱 </b></li>
+								<li><a href="https://mail.qq.com/cgi-bin/frame_html?sid=9di5gOkIhybMDSxy&r=b6f472d774d75b46e0f48ab6616ea6ff" target="_blank"> 564226349@qq.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>个人店铺 </b></li>
+								<li><a href="https://shop114432103.taobao.com/?spm=a230r.7195193.1997079397.2.adK2jM" target="_blank">有兴趣请点击预览个人淘宝店铺→</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					导航
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#about" class="scroll">关于我</a></li>
+						<li><a href="#work" class="scroll">个人经历</a></li>
+						<li><a href="#education" class="scroll">教育背景</a></li>
+						<li><a href="#skills" class="scroll">专业技能</a></li>
+						<li><a href="#projects" class="scroll">部分作品</a></li>
+						<li><a href="#contact" class="scroll">联系我们</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+	<!--about-->
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title"> 关于我</h3>
+			<div class="col-md-8 about-left">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个喜爱编程的工科男，在2016年9月份，喜爱玩游戏的我接触了解到了Unity3D这款游戏引擎，第一次接触游戏引擎的我被它深深的吸引了，开始在网上找资源学习游戏制作的教程，后来发现Unity3D不光能制作游戏，还可以制作VR,AR等更有趣的交互式应用，在经历了半年的学习后，我毅然决定放弃本专业的工作，去从事游戏或者VR行业。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;来到了深圳，一个节奏飞快的一线城市，我感到了生活和工作的艰辛，作为一个非计算机专业的从业者，我深感自己专业知识的欠缺，努力学习追赶那些优秀的人也成为了我唯一的目标。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在深圳的三年多来，任职过两家公司，做了五六个项目，涉足家装，医疗行业，对VR，3D展示交互，以及系统架构设计，都有了一定的积累，有很强的团队合作意识和一定的领导能力，有较强的自我解决问题能力。自己业余时间也在不断了解行业发展，了解学习新的技术，希望能拓展自的知识面，继续在虚拟现实领域深耕细作，为企业或个人做出更优秀的应用。</p>
+			</div>
+			<div class="col-md-4 about-right">
+				<ul>
+					<h5>荣誉证书</h5>
+					<li><span class="glyphicon glyphicon-menu-right" ></span> 河南工业大学本科学历</li>
+					<li><span class="glyphicon glyphicon-menu-right"></span> 计算机二级证书</li>
+					<li><span class="glyphicon glyphicon-menu-right"></span> ..................................... </li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="title">个人经历</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2019年12月 - 2020年5月 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> 深圳华鹊景医疗科技有限公司</h5>
+					<p>参与Unity3D开发医疗产品类软件开发：1、人体针灸学仿真实验 2、肌动学虚拟教学系统 3、儿童认知康复项目 </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>2017年2月 - 2019年10月 </h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> 深圳市三度空间责任有限公司 <span class="glyphicon glyphicon-briefcase"> </span></h5>
+					<p>u3d客户端开发，参与了三个软件的开发：1、三度云享家 2、户型绘制工具 3、三度云享家设计师版 </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--//work-experience-->
+	<!--education-->
+	<div id="education" class="education">
+		<div class="container">
+			<h3 class="title">教育背景</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>2011 - 2015</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-education"> </span> 河南工业大学</h5>
+					<p>河南工业大学电气工程专业本科 </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>2008 - 2011</h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> 沁阳市第一中学 <span class="glyphicon glyphicon-education"></span></h5>
 
-               </ul>
-    </section>
-    <footer>
-           <a href="  https://weibo.com/2249539647/profile?rightmod=1&wvr=6&mod=personinfo"><img src="img/sinaweibo.jpg"height="80" width="80" alt="weibo logo">
-           </a>
-         <p>&copy; lee 和他的朋友股份有限公司</p>
-    </footer>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	<!--skills-->
+	<div id="skills" class="skills">
+		<div class="container">
+			<h3 class="title">专业技能</h3>
+			<div class="skills-info">
+				<div class="col-md-6 bar-grids">
+								<h6>Unity3D <span> 70% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 70%">
+						</div>
+					</div>
+					<h6>C#  <span> 80% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 80%">
+						</div>
+					</div>
+					<h6>C++ & DEVELOPER <span> 30% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 30%">
+						</div>
+					</div>
+					<h6>ShaderLab/CG<span>50% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 50%">
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-6 bar-grids">
+					<h6>Mysql <span> 30% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 30%">
+						</div>
+					</div>
+					<h6>WPF<span> 50% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 50%">
+						</div>
+					</div>
+					<h6>HTML<span>20% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 20%">
+						</div>
+					</div>
+					<h6>Unreal Engine<span> 30% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 30%">
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	<!--portfolio-->
+	<div id="projects" class="portfolio">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">部分作品</h3>
+			<div class="sap_tabs">			
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+						<li class="resp-tab-item"><span>SanDu</span></li>
+						<li class="resp-tab-item"><span>DrawHouse</span></li>
+						<li class="resp-tab-item"><span> MuscleSimulation</span></li>
+						<li class="resp-tab-item"><span>KidsCognitiveTraining</span></li>
+						<li class="resp-tab-item"><span>Others</span></li>
+					</ul>	
+					<div class="clearfix"> </div>	
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/denglu.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/denglu.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+					<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/huxingsousuo.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/huxingsousuo.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/sousuojieguo.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/sousuojieguo.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/sousuofangan.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/sousuofangan.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+						<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/loading.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/loading.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+					<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/xiazai.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/xiazai.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+									<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/1.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/1.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+							<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/2.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/2.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/3.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/4.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/4.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+							<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/5.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/5.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+							<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/6.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/6.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>莎拉喜欢看云。她很沮丧。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/7.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/7.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/8.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/8.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/9.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/9.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/10.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/10.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/11.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/11.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/12.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/12.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/13.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/13.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/14.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/14.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+								
+															<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/15.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/15.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>三度云享家客户端</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+								
+								
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D1.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D1.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D2.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D2.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D3.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D4.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D4.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D5.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D5.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D6.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D6.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D7.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D7.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D8.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D8.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D9.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D9.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D10.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D10.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D11.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D11.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/DrawHouse/D12.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/DrawHouse/D12.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>户型绘制工具</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M1.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M1.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+						<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M2.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M2.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+					<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M3.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M4.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M4.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M5.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M5.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M6.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M6.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+											<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/muscle/M7.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/muscle/M7.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>肌动学仿真教学系统</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K1.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K1.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K2.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K2.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K3.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K3.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K4.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K4.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K5.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K5.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+																</div>
+												<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/kid/K6.png" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/kid/K6.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>儿童认知康复项目</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g10.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/g10.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>莎拉喜欢看云。她很沮丧。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g11.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/g11.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>莎拉喜欢看云。她很沮丧。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="images/g12.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+											<img src="images/g12.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3>My<span> Project</span></h3>
+												<p>莎拉喜欢看云。她很沮丧。</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--ResponsiveTabs-->
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});		
+			</script>
+			<!--//ResponsiveTabs-->
+			<!-- swipe box js -->
+			<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+			<!-- //swipe box js -->
+		</div>
+	</div>
+	<!--//portfolio-->
+	<!--contact -->
+	<div class="welcome contact" id="contact">
+		<div class="container">
+			<h3 class="title">联系我们</h3>
+			<div class="contact-row">
+				<div class="col-md-6 contact-left">
+					<iframe src="http://map.baidu.com/#panoid=09002200011706171137054909Z&panotype=street&heading=0&pitch=0&l=19&tn=B_NORMAL_MAP&sc=0&newmap=1&shareurl=1&pid=09002200011706171137054909Z"></iframe>
+				</div>
+				<div class="col-md-6 contact-right">
+					<div class="address-left">
+						<p>北京朝阳区赵九路风景线,中国 </p>
+					</div>
+					<div class="address-right">
+						<p>电话 : 1500008888</p>
+						<p>E-mail : <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=OwoLDg0MAwgIDgJ7SkoVWFRW" target="_blank">fm185@sina.com</a></p>
+					</div>
+					<div class="clearfix"></div>
+					<div class="contact-form">
+						<form action="#" method="post">
+							<input type="text" name="Name" placeholder="Name" required="">
+							<input class="email" name="Email" type="text" placeholder="Email" required="">
+							<input class="phone" name="phone" type="text" placeholder="Phone" required="">
+							<textarea name="Message" placeholder="Message" required=""></textarea>
+							<input type="submit" value="提交" >
+						</form>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--//contact -->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p>©2018我的简历。所有权利保留|设计的 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
-
 </html>
-
